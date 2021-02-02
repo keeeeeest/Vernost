@@ -1,0 +1,41 @@
+{
+    "urls": {
+        "main": {
+          "path": "/",
+          "controller": "Konstantin\\Vernost\\Controllers\\IndexController::mainAction",
+          "method": "GET"
+        },
+        "animals": {
+            "path": "/animals",
+            "controller": "Konstantin\\Vernost\\Controllers\\AnimalsController::showAnimals",
+            "method": "GET"
+        },
+        "help": {
+            "path": "/help",
+            "controller": "Konstantin\\Vernost\\Controllers\\helpController::helpAction",
+            "method": "GET"
+        },
+        "visit": {
+            "path": "/visit",
+            "controller": "Konstantin\\Vernost\\Controllers\\visitController::visitAction",
+            "method": "GET"
+        },
+        "journal": {
+            "path": "/journal",
+            "controller": "Konstantin\\Vernost\\Controllers\\JournalController::journalAction",
+            "method": "GET"
+        },
+        "find animal": {
+            "path": "/find_animal",
+            "controller": "Konstantin\\Vernost\\Controllers\\FormController::showFindAnimal",
+            "method": "GET"
+        }
+    },
+    "db": {
+        "server": "127.0.0.1",
+        "dbname": "DBVernost",
+        "user": "root",
+        "pass": "root",
+        "charset": "utf8"
+    }
+}

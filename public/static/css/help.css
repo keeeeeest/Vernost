@@ -1,0 +1,36 @@
+
+
+main {
+    margin-left: 2em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textblock span {
+    font-weight: 700;
+}
+
+ul.else {
+    list-style-type: disc;
+    margin: 10px auto;
+    padding: 10px;
+}
+/* 
+main {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #830020;
+} */
+
+li ul.else{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}

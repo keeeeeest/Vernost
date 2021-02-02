@@ -1,0 +1,114 @@
+* {box-sizing: border-box;}
+
+/* body {background: #e9f3fb;} */
+
+form.visit {
+  position: relative;
+  max-width: 400px;
+  /* margin: 50px 0 50px 245px; */
+  margin: 50px auto;
+  /* background: white; */
+  background: #e9f3fb;
+  border-radius: 30px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: rgb(64,199,129);
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  /* background: white; */
+  background: #e9f3fb;
+}
+.form-left-decoration:before {top: -20px;}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: white; */
+  background: #e9f3fb;
+}
+.form-inner {padding: 50px;}
+
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  /* background: #E9EFF6; */
+  background: white;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background:  rgb(64,199,129);
+  border-bottom: 4px solid rgb(33,147,90);
+  color: white;
+  font-size: 14px;
+}
+.form-inner textarea {resize: none;}
+.form-inner h3{
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+
+.form-inner p {
+  margin: 2 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #707981;
+}
+
+.error {
+	margin-bottom: 5px;
+    padding: 10px 20px;
+    background-color: rgba(224, 79, 54, 0.712);
+    border-radius: 8px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 22px;
+}

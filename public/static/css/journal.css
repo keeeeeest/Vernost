@@ -1,0 +1,48 @@
+@import "styles.css";
+@import "flex.css";
+
+q {
+    font-style: italic;
+}
+
+
+
+.photo {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+.photo q {
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+    color: whitesmoke;
+    font-size: xx-large;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.photo:hover q,
+.photo:hover {
+    opacity: 1;
+}
+
+.textblock {
+    margin-left: 2em;
+}
+
+@media (max-width: 770px), 
+(max-width: 480px) {
+    .textblock {
+        margin: 0;
+    }
+
+    .zag {
+        text-align: center;
+    }
+}

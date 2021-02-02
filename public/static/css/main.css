@@ -1,0 +1,121 @@
+@import "styles.css";
+@import "flex.css";
+
+.quote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 5px solid #ee6e73;
+    font-style: italic;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.autor {
+    margin-left: 12em;
+    font-size: 16px;
+}
+
+main {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #830020;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.fpg img {
+    margin: 0 0 1em 1em;
+}
+
+.rabota {
+    margin: 0 1em;
+}
+
+div.rabota img{
+    height: 20em;
+}
+
+div.rabota:first-child {
+    margin: 0 1em 0 0;
+}
+
+div.rabota:first-child img{
+    height: auto;
+}
+
+div.rabota:last-child {
+    margin: 0 0 0 1em;
+}
+
+.director {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.niz {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 915px) {
+
+    div.flex-sm-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.flex-sm-6 {
+        flex: 50%;
+        margin: 1em;
+    }
+    
+    div.rabota:first-child,
+    div.rabota:last-child {
+        margin: 0;
+    }
+
+    div.rabota img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 770px), 
+(max-width: 480px) {
+
+    aside{ 
+        display: none;
+    }
+
+    .autor {
+        margin-left: 2em;
+    }
+
+    div.flex-xs-column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div.rabota:first-child,
+    div.rabota:last-child,
+    .rabota {
+        margin: 0;
+    }
+
+    div.rabota img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .director {
+        width: 50%;
+        height: auto;
+        margin-right: 6em;
+    }
+}

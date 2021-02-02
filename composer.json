@@ -1,0 +1,21 @@
+{
+    "name": "konstantin/vernost",
+    "description": "animal shelter vernost",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Tcybakov",
+            "email": "ktcybakov@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "nikic/fast-route": "^2.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+           "Konstantin\\Vernost\\" : "src/"
+        }
+    }
+}
